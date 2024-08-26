@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/d0b104a98c.js" crossorigin="anonymous"></script>
+    <title>Encriptador | Alura</title>
+</head>
+
+<body class="encryptor-body">
+    <header class="header">
+        <img src="./img/logo.svg" alt="Alura logo" />
+    </header>
+    <main class="encryptor-main">
+        <section class="encryptor-section">
+            <div class="texto-a-encriptar">
+                <textarea placeholder="Ingrese el texto aqui" id="text-input" cols="30" rows="10"></textarea>
+            </div>
+            <div class="mensaje-requisitos">
+                <img src="./img/exclamation.svg" alt="" />
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="div-botones">
+                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <section class="aside-section">
+            <aside class="aside-encriptador">
+                <textarea class="mensaje" id="message" cols="30" rows="10"></textarea>
+                <h2 class="mensaje-busqueda" id="mensaje-busqueda">
+                    Ningún mensaje fue encontrado
+                </h2>
+                <p class="mensaje-busqueda" id="mensaje-ingresa-texto">
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+                <p class="texto-copiado" id="texto-copiado">
+                    ¡Texto copiado en el portapapeles!
+                </p>
+                <button id="copy" onclick="copiar()">Copiar</button>
+            </aside>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="redes">
+            <a href="https://github.com/FerOrtiz97" target="_blank"><i class="fa-brands fa-github"
+                    style="color: black"></i></a>
+            <a href="https://www.linkedin.com/in/fernando-ortiz-180b5627a/" target="_blank"><i
+                    class="fa-brands fa-linkedin" style="color: black"></i></a>
+        </div>
+        <div class="autor-caja">
+            <p>Alura Latam 2024 - Fernando Ortiz</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
